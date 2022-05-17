@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ *{margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+} 
+nav{
+    width:100%;
+    position:sticky !important;
+    left:0;
+    top:0;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+    z-index: 10;
+}
+
+.navbar-brand{
+    font-weight: 800;
+}
+
+.nav-link{
+    font-weight: 600px;
+
+}
+.nav-link{
+    color:white !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid white;
+}
+
+section{
+    width:100%;
+    min-height:100vh;
+    
+}
+  
+
+/*Home Section */
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba white),rgba(white)url("poses.jpg") no-repeat center/cover;
+    background:center;
+    display:flex;
+    align-items:center;
+    color: black;
+    flex-direction: column;
+}
+
+#home p{
+    position:absolute;
+    top: 50%;
+    font-size:100px;
+    opacity:0;
+    animation:text 3s ease-in-out;
+}
+
+#home p:nth-child(1){
+     animation-delay: 0s;
+
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+#home p:nth-child(3){
+    animation-delay: 6s;
+}
+#home p:nth-child(4){
+    animation-delay: 9s;
+}
+
+
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#home span{
+    color:yellow;   
+}
+
+ @media screen and(max-width:576px) {
+     #home p{
+         font-size:80px;
+     }
+     
+ }
+.me{
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+}
+
+/* About Section*/
+
+#about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:pink;
+}
+
+.content{
+    font: size 30px; 
+    text-align: center;   
+                  
+}
+
+
+/* Skill Section*/
+#skills{
+    padding-top: 5%;
+    background:#e5e5e5;
+
+}
+
+#skills.container{
+    margin-top: 6%;
+
+
+
+}
+label{
+    font-size:20px;
+}
+.progress{
+    height:30px !important;
+    box-shadow: 2px 4px 5px gray,-2px -2px 5px white;
+}
+.progress:hover{
+    box-shadow:2px 4px 5px white,-2px -2px 5px gray;
+}
+
+
+/*Pricing Section*/
+
+#pricing{
+    padding-top:5x;
+
+
+
+}
+.card{
+    margin-top:15%;
+
+
+}
+.card:hover{
+    box-shadow: 8px 8px 15px rgba(0,0,0,.4);
+    transition: 2s;
+
+
+}
+
+/*contact section*/
+
+#contact{
+    padding-top: 7%;
+    background-color: antiquewhite;
+}
+ 
+#contact iframe{
+    box-shadow: 15px 20px 10px rgba(0,0,0,.4);
+}
+
+
+
+
+
+    
+
